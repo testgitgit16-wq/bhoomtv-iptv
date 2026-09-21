@@ -1,0 +1,68 @@
+name: Auto Update BhoomTV Playlist
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bhoomtv-iptv-playlist
+  cancel-in-progress: false
+
+jobs:
+  build-and-update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: "3.13"
+          cache: pip
+          cache-dependency-path: requirements.txt
+
+      - name: Install Python dependencies
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
+
+      - name: Install Playwright Chromium
+        run: python -m playwright install --with-deps chromium
+
+      - name: Run BhoomTV scraper
+        run: python -u multi_channel_scraper.py
+
+      - name: Upload scraper report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bhoomtv-report-${{ github.run_id }}
+          path: bhoomtv_report.json
+          if-no-files-found: ignore
+          retention-days: 7
+
+      - name: Validate playlist
+        run: |
+          test -f bhoomtv_playlist.m3u
+          echo "Playlist bytes: $(wc -c < bhoomtv_playlist.m3u)"
+          echo "M3U entries: $(grep -c '^#EXTINF:' bhoomtv_playlist.m3u || true)"
+          head -n 5 bhoomtv_playlist.m3u
+
+      - name: Commit updated playlist and report
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bhoomtv_playlist.m3u bhoomtv_report.json
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Auto-update BhoomTV playlist"
+          git push
