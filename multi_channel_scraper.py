@@ -34,6 +34,18 @@ MAX_PAGES_WITHOUT_NEW_CHANNELS = 2
 CATEGORY_RETRY_DELAYS = (5, 10, 20)
 PAGE_GAP_SECONDS = 3
 
+# Public stream catalog used only as a fallback when BhoomTV pages are unavailable.
+# This does not bypass BhoomTV/Cloudflare; it imports openly published stream entries
+# and validates them directly.
+EXTERNAL_M3U_SOURCES = [
+    {
+        "url": "https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u",
+        "group": "Tamil Local TV",
+        "source": "iptv-org",
+    },
+]
+
+
 CF_MARKERS = (
     "just a moment",
     "cf-chl-",
