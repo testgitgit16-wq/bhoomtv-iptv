@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T13:48:44.389980Z",
+  "generated_at": "2026-09-21T21:39:20.047135Z",
   "source": "https://bhoomtv.org",
   "categories": [
     {
@@ -23,10 +23,10 @@
     "inventory_channels": 44,
     "scanned_channels": 44,
     "captured_stream_candidates": 14,
-    "usable_streams": 8,
-    "channels_with_usable_streams": 8,
-    "m3u_entries_written": 8,
-    "failed_channels": 36
+    "usable_streams": 10,
+    "channels_with_usable_streams": 10,
+    "m3u_entries_written": 10,
+    "failed_channels": 34
   },
   "blocked_categories": {
     "Tamil TV": "CLOUDFLARE_CHALLENGE",
@@ -304,34 +304,18 @@
       "validations": []
     },
     {
-      "title": "Arputhar Yesu TV (576p)",
-      "url": "https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u#source-live.m3u8-1",
+      "title": "Aaryaa TV (1080p)",
+      "url": "https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u#source-index.m3u8-0",
       "group": "Tamil Local TV",
       "captured": 1,
       "usable": 0,
-      "reason": "INVALID_HLS_HTTP_404",
+      "reason": "SEGMENT_ERROR:peer closed connection without sending complete message body (received 4046210 bytes, expected 4346560)",
       "validations": [
         {
-          "url": "https://account33.livebox.co.in/jesushelpshls/live.m3u8",
+          "url": "https://stream.ottlive.co.in/aryatvtamil/index.m3u8",
           "kind": "HLS",
           "usable": false,
-          "reason": "INVALID_HLS_HTTP_404"
-        }
-      ]
-    },
-    {
-      "title": "Bhagyam TV (1080p)",
-      "url": "https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u#source-index-1409148900-now.m3u8-2",
-      "group": "Tamil Local TV",
-      "captured": 1,
-      "usable": 0,
-      "reason": "INVALID_HLS_HTTP_400",
-      "validations": [
-        {
-          "url": "https://ott.bhagyam.net/hls/bhagyamweb/index-1409148900-now.m3u8",
-          "kind": "HLS",
-          "usable": false,
-          "reason": "INVALID_HLS_HTTP_400"
+          "reason": "SEGMENT_ERROR:peer closed connection without sending complete message body (received 4046210 bytes, expected 4346560)"
         }
       ]
     },
@@ -380,22 +364,6 @@
           "kind": "HLS",
           "usable": false,
           "reason": "REQUEST_ERROR:[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'stream.sscloud7.com'. (_ssl.c:1032)"
-        }
-      ]
-    },
-    {
-      "title": "Ultimate TV (1080p)",
-      "url": "https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u#source-index.m3u8-13",
-      "group": "Tamil Local TV",
-      "captured": 1,
-      "usable": 0,
-      "reason": "SEGMENT_HTTP_404",
-      "validations": [
-        {
-          "url": "https://stream.ottlive.co.in/utvtamil/index.m3u8",
-          "kind": "HLS",
-          "usable": false,
-          "reason": "SEGMENT_HTTP_404"
         }
       ]
     }
