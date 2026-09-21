@@ -1,6 +1,12 @@
 name: Auto Update BhoomTV Playlist
 
 on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - "bhoomtv_playlist.m3u"
+      - "bhoomtv_report.json"
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
