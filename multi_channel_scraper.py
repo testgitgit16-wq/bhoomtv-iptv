@@ -125,6 +125,55 @@ def extract_channel_links(html: str, group: str, category_url: str) -> list[dict
     return rows
 
 
+
+def parse_m3u_entries(text: str, source: dict) -> list[dict]:
+    """Parse a public M3U catalog into channel records with direct stream candidates."""
+    entries = []
+    pending = None
+
+    for raw in text.splitlines():
+        line = raw.strip()
+        if not line:
+            continue
+
+        if line.startswith("#EXTINF:"):
+            # Keep this deliberately tolerant: different public catalogs use
+            # different attribute combinations.
+            display = line.rsplit(",", 1)[-1].strip() if "," in line else "Unknown Channel"
+            tvg_name = re.search(r'tvg-name="([^"]+)"', line, flags=re.I)
+            tvg_logo = re.search(r'tvg-logo="([^"]+)"', line, flags=re.I)
+            pending = {
+                "title": clean_name(
+                    tvg_name.group(1) if tvg_name else display,
+                    display or "Unknown Channel",
+                ),
+                "display": display or "Unknown Channel",
+                "logo": tvg_logo.group(1) if tvg_logo else "",
+            }
+            continue
+
+        if pending and line.startswith(("http://", "https://")):
+            rows = {
+                "title": pending["title"],
+                "url": f"{source['url']}#source-{channel_slug(line)}-{len(entries)}",
+                "logo": pending["logo"],
+                "group": source["group"],
+                "source_category": source["url"],
+                "direct_candidates": [{
+                    "url": line,
+                    "kind": "HLS" if ".m3u8" in line.lower() else (
+                        "DASH" if ".mpd" in line.lower() else "UNKNOWN"
+                    ),
+                    "referer": "",
+                }],
+                "external_source": source["source"],
+            }
+            if rows["direct_candidates"][0]["kind"] != "UNKNOWN":
+                entries.append(rows)
+            pending = None
+
+    return entries
+
 def find_next_page(html: str, current_url: str) -> str | None:
     soup = BeautifulSoup(html, "html.parser")
     current = canonical(current_url)
@@ -533,6 +582,7 @@ async def main() -> None:
 
             inventory = {}
             blocked_categories = {}
+            external_sources = []
 
             for category in CATEGORIES:
                 rows, blocked = await crawl_category(category_page, category)
@@ -541,6 +591,34 @@ async def main() -> None:
                 if blocked:
                     blocked_categories[category["group"]] = blocked
                 log(f"[INVENTORY] unique_channels={len(inventory)}")
+
+            # Add openly published direct-stream catalog entries as a fallback.
+            for source in EXTERNAL_M3U_SOURCES:
+                log(f"\n=== EXTERNAL SOURCE: {source['source']} ===")
+                try:
+                    response = await client.get(source["url"], follow_redirects=True)
+                    if response.status_code != 200:
+                        log(f"[EXTERNAL ERROR] HTTP {response.status_code} -> {source['url']}")
+                        continue
+                    rows = parse_m3u_entries(response.text, source)
+                    added = 0
+                    for row in rows:
+                        key = row["title"].strip().lower() + "|" + row["direct_candidates"][0]["url"]
+                        if not any(
+                            (x.get("title", "").strip().lower() + "|" + x.get("direct_candidates", [{}])[0].get("url", "")) == key
+                            for x in inventory.values()
+                        ):
+                            inventory[row["url"]] = row
+                            added += 1
+                    external_sources.append({
+                        "source": source["source"],
+                        "url": source["url"],
+                        "entries_found": len(rows),
+                        "entries_added": added,
+                    })
+                    log(f"[EXTERNAL RESULT] found={len(rows)} added={added} inventory={len(inventory)}")
+                except Exception as exc:
+                    log(f"[EXTERNAL ERROR] {source['source']} -> {exc}")
 
             await category_page.close()
 
@@ -558,10 +636,15 @@ async def main() -> None:
                     f"{channel['url']}"
                 )
 
-                candidates, capture_reason = await capture_streams(
-                    context,
-                    channel,
-                )
+                if channel.get("direct_candidates"):
+                    candidates = channel["direct_candidates"]
+                    capture_reason = None
+                    log(f"  [DIRECT SOURCE] {channel.get('external_source', 'public catalog')} -> {len(candidates)} candidate(s)")
+                else:
+                    candidates, capture_reason = await capture_streams(
+                        context,
+                        channel,
+                    )
                 captured_total += len(candidates)
                 log(f"  [CAPTURED] {len(candidates)} candidate stream(s)")
 
@@ -633,6 +716,7 @@ async def main() -> None:
                 "generated_at": now(),
                 "source": BASE_URL,
                 "categories": CATEGORIES,
+                "external_sources": external_sources,
                 "stats": {
                     "inventory_channels": total,
                     "scanned_channels": total,
