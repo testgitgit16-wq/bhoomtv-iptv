@@ -31,6 +31,8 @@ CAPTURE_WAIT_SECONDS = 8
 REQUEST_TIMEOUT = 20
 MAX_CANDIDATES_PER_CHANNEL = 5
 MAX_PAGES_WITHOUT_NEW_CHANNELS = 2
+CATEGORY_RETRY_DELAYS = (5, 10, 20)
+PAGE_GAP_SECONDS = 3
 
 CF_MARKERS = (
     "just a moment",
@@ -167,26 +169,50 @@ async def crawl_category(page, category: dict) -> tuple[list[dict], str | None]:
         page_no = len(visited)
         log(f"[CATEGORY] page={page_no} url={current_url}")
 
-        try:
-            response = await page.goto(
-                current_url,
-                wait_until="domcontentloaded",
-                timeout=PAGE_TIMEOUT * 1000,
+        challenged = False
+        response = None
+        html = ""
+        title = ""
+        status = 0
+
+        for retry_no, delay in enumerate((0, *CATEGORY_RETRY_DELAYS), start=0):
+            if retry_no:
+                log(f"  [CATEGORY RETRY] attempt={retry_no + 1} after {delay}s")
+                await asyncio.sleep(delay)
+            try:
+                response = await page.goto(
+                    current_url,
+                    wait_until="domcontentloaded",
+                    timeout=PAGE_TIMEOUT * 1000,
+                )
+                await page.wait_for_timeout(1200)
+                status = response.status if response else 0
+                html = await page.content()
+                title = (await page.title()).lower()
+            except PlaywrightTimeoutError:
+                log("  [CATEGORY ERROR] PAGE_TIMEOUT")
+                if retry_no < len(CATEGORY_RETRY_DELAYS):
+                    continue
+                break
+            except Exception as exc:
+                log(f"  [CATEGORY ERROR] {exc}")
+                if retry_no < len(CATEGORY_RETRY_DELAYS):
+                    continue
+                break
+
+            challenged = is_cloudflare(status, {}, html) or any(
+                marker in title for marker in CF_MARKERS
             )
-            await page.wait_for_timeout(1200)
-            status = response.status if response else 0
-            html = await page.content()
-            title = (await page.title()).lower()
-        except PlaywrightTimeoutError:
-            log("  [CATEGORY ERROR] PAGE_TIMEOUT")
-            break
-        except Exception as exc:
-            log(f"  [CATEGORY ERROR] {exc}")
+            if not challenged:
+                break
+            log("  [CATEGORY CHALLENGE] access challenge detected; retrying normally")
+
+        if challenged:
+            blocked_reason = "CLOUDFLARE_CHALLENGE"
+            log("  [CATEGORY BLOCKED] challenge persisted after normal retries")
             break
 
-        if is_cloudflare(status, {}, html) or any(m in title for m in CF_MARKERS):
-            blocked_reason = "CLOUDFLARE_CHALLENGE"
-            log("  [CATEGORY BLOCKED] Cloudflare/access challenge detected")
+        if not html:
             break
 
         if status >= 400:
@@ -216,6 +242,7 @@ async def crawl_category(page, category: dict) -> tuple[list[dict], str | None]:
         next_url = find_next_page(html, current_url)
         if not next_url or next_url in visited:
             break
+        await asyncio.sleep(PAGE_GAP_SECONDS)
         current_url = next_url
 
     log(
