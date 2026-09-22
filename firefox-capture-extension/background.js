@@ -85,7 +85,7 @@ browser.webRequest.onBeforeSendHeaders.addListener(async details=>{
   const get=n=>{const h=hs.find(x=>String(x.name||"").toLowerCase()===n.toLowerCase());return h?String(h.value||""):"";};
   await saveCapture({channelName:tab.title||tab.url,channelUrl:tab.url,streamUrl:details.url,referer:get("Referer")||"",userAgent:get("User-Agent")||"",capturedAt:new Date().toISOString()});
   await sendStatus({lastCapture:details.url});
-},{urls:["<all_urls>"]},["requestHeaders","extraHeaders"]);
+},{urls:["<all_urls>"]},["requestHeaders"]);
 browser.runtime.onMessage.addListener(async m=>{
   if(!m||typeof m.type!=="string")return null;
   if(m.type==="startAutoScan")return startAutoScan();
