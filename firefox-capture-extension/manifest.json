@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "BhoomTV Stream Capture",
+  "version": "1.0.0",
+  "description": "Captures HLS/DASH stream URLs and playback headers from BhoomTV pages you are actively viewing.",
+  "permissions": [
+    "webRequest",
+    "tabs",
+    "storage",
+    "downloads",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "browser_action": {
+    "default_title": "BhoomTV Capture",
+    "default_popup": "popup.html"
+  },
+  "applications": {
+    "gecko": {
+      "id": "bhoomtv-capture@testtamil.local"
+    }
+  }
+}
