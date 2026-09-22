@@ -42,7 +42,17 @@ jobs:
       - name: Install Playwright Chromium
         run: python -m playwright install --with-deps chromium
 
+      - name: Check BhoomTV Worker access layer
+        env:
+          BHOOMTV_WORKER_URL: https://bhoom-tamil-api.testtamil.workers.dev
+        run: |
+          echo "Worker: $BHOOMTV_WORKER_URL"
+          curl -fsSL --max-time 20 "$BHOOMTV_WORKER_URL/" | head -c 1000
+          echo
+
       - name: Run BhoomTV scraper
+        env:
+          BHOOMTV_WORKER_URL: https://bhoom-tamil-api.testtamil.workers.dev
         run: python -u multi_channel_scraper.py
 
       - name: Upload scraper report
