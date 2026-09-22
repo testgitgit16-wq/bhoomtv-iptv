@@ -483,7 +483,17 @@ def write_m3u(channels: list[dict]) -> int:
             referer = stream.get("referer") or channel["url"]
             lines.append(f"#EXTVLCOPT:http-referrer={referer}")
             lines.append(f"#EXTVLCOPT:http-user-agent={USER_AGENT}")
-            lines.append(stream["url"])
+            # Also append player headers in pipe syntax, matching the user's
+            # preferred IPTV/M3U sample format.
+            stream_url = stream["url"]
+            if "|" not in stream_url:
+                stream_url += (
+                    "|Referer="
+                    + referer
+                    + "&User-Agent="
+                    + USER_AGENT
+                )
+            lines.append(stream_url)
             lines.append("")
             count += 1
 
