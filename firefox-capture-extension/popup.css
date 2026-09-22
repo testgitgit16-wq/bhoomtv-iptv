@@ -1,0 +1,24 @@
+body {
+  width: 430px;
+  font: 13px Arial, sans-serif;
+  margin: 12px;
+}
+h1 { margin: 0 0 6px; font-size: 18px; }
+.hint { color: #555; line-height: 1.35; }
+.toolbar { display: flex; flex-wrap: wrap; gap: 6px; margin: 10px 0; }
+button { cursor: pointer; }
+.danger { color: #b00020; }
+#status { margin: 8px 0; font-weight: bold; }
+.card {
+  border: 1px solid #ddd;
+  border-radius: 7px;
+  padding: 8px;
+  margin: 8px 0;
+  background: #fafafa;
+}
+.url, .card div {
+  word-break: break-all;
+  margin-top: 4px;
+  color: #444;
+}
+.card button { margin-top: 7px; }
