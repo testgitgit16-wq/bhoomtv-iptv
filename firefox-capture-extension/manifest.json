@@ -1,11 +1,39 @@
 {
   "manifest_version": 2,
   "name": "BhoomTV Stream Capture",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Automatically crawls BhoomTV Tamil channel pages in Firefox, plays channels, captures HLS/DASH requests and exports M3U.",
-  "permissions": ["webRequest", "tabs", "storage", "downloads", "<all_urls>"],
-  "background": {"scripts": ["background.js"]},
-  "browser_action": {"default_title": "BhoomTV Auto Scanner", "default_popup": "popup.html"},
-  "content_scripts": [{"matches": ["https://bhoomtv.org/*","https://www.bhoomtv.org/*"],"js": ["content.js"],"run_at": "document_idle"}],
-  "applications": {"gecko": {"id": "bhoomtv-capture@testtamil.local"}}
+  "permissions": [
+    "webRequest",
+    "tabs",
+    "storage",
+    "downloads",
+    "<all_urls>"
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_title": "BhoomTV Auto Scanner",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://bhoomtv.org/*",
+        "https://www.bhoomtv.org/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "applications": {
+    "gecko": {
+      "id": "bhoomtv-capture@testtamil.local"
+    }
+  }
 }
