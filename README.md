@@ -1,30 +1,29 @@
 # BhoomTV IPTV Auto Playlist
 
-This project runs GitHub Actions to build a Tamil-focused IPTV playlist.
+This project runs GitHub Actions to build a Tamil-focused IPTV playlist **from BhoomTV only**.
 
 ## Collection flow
 
 1. Crawl the BhoomTV Tamil TV and Tamil Local TV directories for channel inventory and pagination.
 2. Detect and report Cloudflare/access challenges without attempting to bypass them.
-3. Import openly published direct HLS/DASH stream entries from the public Tamil Nadu IPTV catalog at https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u
-4. Validate HLS/DASH playlists and (for HLS) a media playlist/segment request.
-5. Write only usable streams to bhoomtv_playlist.m3u.
+3. Open each discovered BhoomTV channel page normally.
+4. Capture HLS/DASH stream references exposed during normal page loading.
+5. Validate captured streams and write only usable BhoomTV streams to bhoomtv_playlist.m3u.
 6. Preserve the previous playlist when a run produces zero usable streams.
 
 ## Real-time Actions logging
 
 The workflow prints:
 
-- INVENTORY — channel pages discovered
-- DIRECT SOURCE — streams obtained from the public fallback catalog
-- CAPTURE — stream URLs captured from normally accessible BhoomTV pages
+- INVENTORY — BhoomTV channels discovered
+- CAPTURE — stream URLs captured from BhoomTV pages
 - VALIDATE — direct stream validation
 - RUNNING TOTAL — scanned/captured/usable counts
 - FINAL RESULT — final playlist statistics
 
 ## Files
 
-- multi_channel_scraper.py — inventory, pagination, public catalog fallback, stream validation, logging, and M3U generation.
+- multi_channel_scraper.py — BhoomTV inventory, pagination, browser capture, validation, logging, and M3U generation.
 - requirements.txt — Python dependencies.
 - .github/workflows/update_playlist.yml — automatic 6-hour schedule and manual workflow.
 - bhoomtv_playlist.m3u — generated IPTV playlist.
@@ -32,9 +31,13 @@ The workflow prints:
 
 ## Important behavior
 
-The project does not attempt to bypass Cloudflare or other access controls.
+Only **https://bhoomtv.org/** is used as the channel/stream source.
 
-The fallback catalog is a separate public source of direct HLS/DASH URLs. Those URLs are validated before being placed in the generated playlist.
+The project does not import IPTV-org, other M3U playlists, or third-party channel catalogs.
+
+The project does not attempt to bypass Cloudflare or other access controls. When BhoomTV blocks the GitHub runner, the block is recorded in the Actions log/report.
+
+If a run discovers zero usable streams, the previous playlist is preserved.
 
 ## Playlist URL
 
