@@ -2,10 +2,11 @@ from __future__ import annotations
 
 import asyncio
 import json
+import os
 import re
 from datetime import datetime, timezone
 from pathlib import Path
-from urllib.parse import urljoin, urlparse
+from urllib.parse import quote, urljoin, urlparse
 
 import httpx
 from bs4 import BeautifulSoup
@@ -13,6 +14,7 @@ from playwright.async_api import TimeoutError as PlaywrightTimeoutError
 from playwright.async_api import async_playwright
 
 BASE_URL = "https://bhoomtv.org"
+WORKER_URL = os.getenv("BHOOMTV_WORKER_URL", "https://bhoom-tamil-api.testtamil.workers.dev").rstrip("/")
 CATEGORIES = [
     {"url": f"{BASE_URL}/channel/tamil/", "group": "Tamil TV"},
     {"url": f"{BASE_URL}/channel/tamil-local-tv/", "group": "Tamil Local TV"},
@@ -30,7 +32,6 @@ PAGE_TIMEOUT = 30
 CAPTURE_WAIT_SECONDS = 8
 REQUEST_TIMEOUT = 20
 MAX_CANDIDATES_PER_CHANNEL = 5
-MAX_PAGES_WITHOUT_NEW_CHANNELS = 2
 CATEGORY_RETRY_DELAYS = (5, 10, 20)
 PAGE_GAP_SECONDS = 3
 
@@ -156,14 +157,76 @@ def find_next_page(html: str, current_url: str) -> str | None:
     return canonical(f"{base}/page/2/")
 
 
-async def crawl_category(page, category: dict) -> tuple[list[dict], str | None]:
+
+def is_bhoomtv_url(url: str) -> bool:
+    host = urlparse(url).hostname
+    return str(host or "").lower() in {"bhoomtv.org", "www.bhoomtv.org"}
+
+
+def worker_proxy_url(target: str) -> str:
+    return f"{WORKER_URL}/proxy?url={quote(target, safe='')}"
+
+
+def worker_route_allowed(target: str) -> bool:
+    path = urlparse(target).path
+    return (
+        path == "/"
+        or path.startswith("/channel/")
+        or path.startswith("/live/")
+        or path == "/wp-sitemap.xml"
+        or path == "/sitemap.xml"
+        or path == "/sitemap_index.xml"
+        or path.startswith("/wp-sitemap-")
+    )
+
+
+async def install_worker_route(page, client: httpx.AsyncClient) -> None:
+    async def handle(route) -> None:
+        request = route.request
+        target = request.url
+        if not is_bhoomtv_url(target) or not worker_route_allowed(target):
+            await route.continue_()
+            return
+        try:
+            response = await client.request(
+                request.method,
+                worker_proxy_url(target),
+                headers={
+                    "User-Agent": USER_AGENT,
+                    "Accept": request.headers.get("accept", "*/*"),
+                    "Accept-Language": request.headers.get("accept-language", "en-US,en;q=0.9"),
+                    "Referer": request.headers.get("referer") or BASE_URL + "/",
+                },
+                follow_redirects=True,
+                timeout=REQUEST_TIMEOUT,
+            )
+            headers = {}
+            for name in ("content-type", "cache-control", "etag", "last-modified"):
+                value = response.headers.get(name)
+                if value:
+                    headers[name] = value
+            await route.fulfill(
+                status=response.status_code,
+                headers=headers,
+                body=response.content,
+            )
+        except Exception as exc:
+            log(f"    [WORKER ROUTE ERROR] {target} -> {exc}")
+            await route.continue_()
+
+    await page.route("**://bhoomtv.org/**", handle)
+    await page.route("**://www.bhoomtv.org/**", handle)
+
+
+async def crawl_category(page, category: dict, client: httpx.AsyncClient) -> tuple[list[dict], str | None]:
     current_url = category["url"]
     visited = set()
     channels = {}
-    no_new_pages = 0
     blocked_reason = None
 
+    await install_worker_route(page, client)
     log(f"\n=== CATEGORY: {category['group']} ===")
+    log(f"[ACCESS LAYER] {WORKER_URL}")
 
     while current_url and current_url not in visited:
         visited.add(current_url)
@@ -235,9 +298,8 @@ async def crawl_category(page, category: dict) -> tuple[list[dict], str | None]:
             f"new={added} total={len(channels)}"
         )
 
-        no_new_pages = no_new_pages + 1 if added == 0 else 0
-        if no_new_pages >= MAX_PAGES_WITHOUT_NEW_CHANNELS:
-            log("  [CATEGORY STOP] no new channels on consecutive pages")
+        if not rows:
+            log("  [CATEGORY STOP] page returned zero channels")
             break
 
         next_url = find_next_page(html, current_url)
@@ -253,8 +315,9 @@ async def crawl_category(page, category: dict) -> tuple[list[dict], str | None]:
     return list(channels.values()), blocked_reason
 
 
-async def capture_streams(context, channel: dict) -> tuple[list[dict], str | None]:
+async def capture_streams(context, channel: dict, client: httpx.AsyncClient) -> tuple[list[dict], str | None]:
     page = await context.new_page()
+    await install_worker_route(page, client)
     candidates = []
     seen = set()
     challenge = False
@@ -499,11 +562,9 @@ def write_m3u(channels: list[dict]) -> int:
 
     content = "\n".join(lines).rstrip() + "\n"
 
-    # Never wipe an existing playlist during a temporary zero-stream run.
-    if count > 0 or not OUTPUT_M3U.exists():
-        OUTPUT_M3U.write_text(content, encoding="utf-8")
-    else:
-        log("[PROTECT] 0 usable streams; existing playlist preserved")
+    OUTPUT_M3U.write_text(content, encoding="utf-8")
+    if count == 0:
+        log("[PLAYLIST] No usable BhoomTV streams found; wrote an empty BhoomTV-only playlist")
 
     return count
 
@@ -512,6 +573,7 @@ async def main() -> None:
     started = now()
     log("=== BHOOMTV IPTV AUTO SCRAPER ===")
     log(f"Started: {started}")
+    log(f"Worker access layer: {WORKER_URL}")
     log("Access challenges are detected and reported; they are not bypassed.")
 
     async with httpx.AsyncClient(
@@ -534,7 +596,7 @@ async def main() -> None:
             blocked_categories = {}
 
             for category in CATEGORIES:
-                rows, blocked = await crawl_category(category_page, category)
+                rows, blocked = await crawl_category(category_page, category, client)
                 for row in rows:
                     inventory[row["url"]] = row
                 if blocked:
@@ -565,6 +627,7 @@ async def main() -> None:
                     candidates, capture_reason = await capture_streams(
                         context,
                         channel,
+                        client,
                     )
                 captured_total += len(candidates)
                 log(f"  [CAPTURED] {len(candidates)} candidate stream(s)")
@@ -636,6 +699,7 @@ async def main() -> None:
             report = {
                 "generated_at": now(),
                 "source": BASE_URL,
+                "access_layer": WORKER_URL,
                 "categories": CATEGORIES,
                 "stats": {
                     "inventory_channels": total,
