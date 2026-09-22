@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-21T21:39:20.047135Z",
+  "generated_at": "2026-09-22T03:02:11.106958Z",
   "source": "https://bhoomtv.org",
   "categories": [
     {
@@ -304,22 +304,6 @@
       "validations": []
     },
     {
-      "title": "Aaryaa TV (1080p)",
-      "url": "https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u#source-index.m3u8-0",
-      "group": "Tamil Local TV",
-      "captured": 1,
-      "usable": 0,
-      "reason": "SEGMENT_ERROR:peer closed connection without sending complete message body (received 4046210 bytes, expected 4346560)",
-      "validations": [
-        {
-          "url": "https://stream.ottlive.co.in/aryatvtamil/index.m3u8",
-          "kind": "HLS",
-          "usable": false,
-          "reason": "SEGMENT_ERROR:peer closed connection without sending complete message body (received 4046210 bytes, expected 4346560)"
-        }
-      ]
-    },
-    {
       "title": "Dharsan TV (720p)",
       "url": "https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u#source-index.m3u8-3",
       "group": "Tamil Local TV",
@@ -364,6 +348,22 @@
           "kind": "HLS",
           "usable": false,
           "reason": "REQUEST_ERROR:[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'stream.sscloud7.com'. (_ssl.c:1032)"
+        }
+      ]
+    },
+    {
+      "title": "Ultimate TV (1080p)",
+      "url": "https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u#source-index.m3u8-13",
+      "group": "Tamil Local TV",
+      "captured": 1,
+      "usable": 0,
+      "reason": "SEGMENT_ERROR:peer closed connection without sending complete message body (received 4046210 bytes, expected 4199168)",
+      "validations": [
+        {
+          "url": "https://stream.ottlive.co.in/utvtamil/index.m3u8",
+          "kind": "HLS",
+          "usable": false,
+          "reason": "SEGMENT_ERROR:peer closed connection without sending complete message body (received 4046210 bytes, expected 4199168)"
         }
       ]
     }

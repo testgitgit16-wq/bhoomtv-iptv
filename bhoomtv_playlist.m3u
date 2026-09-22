@@ -1,4 +1,9 @@
 #EXTM3U
+#EXTINF:-1 tvg-name="Aaryaa TV (1080p)" group-title="Tamil Local TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/aryatvtamil.png",Aaryaa TV (1080p)
+#EXTVLCOPT:http-referrer=https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u#source-index.m3u8-0
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
+https://stream.ottlive.co.in/aryatvtamil/index.m3u8
+
 #EXTINF:-1 tvg-name="Arputhar Yesu TV (576p)" group-title="Tamil Local TV" tvg-logo="https://arputharyesutv.net/wp-content/uploads/2022/07/AR-LOGO-PNG.png",Arputhar Yesu TV (576p)
 #EXTVLCOPT:http-referrer=https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u#source-live.m3u8-1
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
@@ -43,8 +48,3 @@ https://live.olidigital.in/olitv/olitv/index.m3u8
 #EXTVLCOPT:http-referrer=https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u#source-index.m3u8-11
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
 https://stream.galaxyott.live/live/subintv/index.m3u8
-
-#EXTINF:-1 tvg-name="Ultimate TV (1080p)" group-title="Tamil Local TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/utvtamil.png",Ultimate TV (1080p)
-#EXTVLCOPT:http-referrer=https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u#source-index.m3u8-13
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36
-https://stream.ottlive.co.in/utvtamil/index.m3u8
