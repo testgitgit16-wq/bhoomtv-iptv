@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-22T03:02:11.106958Z",
+  "generated_at": "2026-09-22T04:18:16.271051Z",
   "source": "https://bhoomtv.org",
   "categories": [
     {
@@ -11,22 +11,14 @@
       "group": "Tamil Local TV"
     }
   ],
-  "external_sources": [
-    {
-      "source": "iptv-org",
-      "url": "https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u",
-      "entries_found": 14,
-      "entries_added": 14
-    }
-  ],
   "stats": {
-    "inventory_channels": 44,
-    "scanned_channels": 44,
-    "captured_stream_candidates": 14,
-    "usable_streams": 10,
-    "channels_with_usable_streams": 10,
-    "m3u_entries_written": 10,
-    "failed_channels": 34
+    "inventory_channels": 30,
+    "scanned_channels": 30,
+    "captured_stream_candidates": 0,
+    "usable_streams": 0,
+    "channels_with_usable_streams": 0,
+    "m3u_entries_written": 0,
+    "failed_channels": 30
   },
   "blocked_categories": {
     "Tamil TV": "CLOUDFLARE_CHALLENGE",
@@ -302,70 +294,6 @@
       "usable": 0,
       "reason": "CLOUDFLARE_CHALLENGE",
       "validations": []
-    },
-    {
-      "title": "Dharsan TV (720p)",
-      "url": "https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u#source-index.m3u8-3",
-      "group": "Tamil Local TV",
-      "captured": 1,
-      "usable": 0,
-      "reason": "INVALID_HLS_HTTP_403",
-      "validations": [
-        {
-          "url": "https://cable91tataplay.akamaized.net/live/dharshantv/index.m3u8",
-          "kind": "HLS",
-          "usable": false,
-          "reason": "INVALID_HLS_HTTP_403"
-        }
-      ]
-    },
-    {
-      "title": "NTC TV (720p)",
-      "url": "https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u#source-ntv.m3u8-9",
-      "group": "Tamil Local TV",
-      "captured": 1,
-      "usable": 0,
-      "reason": "SEGMENT_HTTP_404",
-      "validations": [
-        {
-          "url": "https://galaxyott.live/hls/ntv.m3u8",
-          "kind": "HLS",
-          "usable": false,
-          "reason": "SEGMENT_HTTP_404"
-        }
-      ]
-    },
-    {
-      "title": "Suriyan TV (576p)",
-      "url": "https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u#source-index.m3u8-12",
-      "group": "Tamil Local TV",
-      "captured": 1,
-      "usable": 0,
-      "reason": "REQUEST_ERROR:[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'stream.sscloud7.com'. (_ssl.c:1032)",
-      "validations": [
-        {
-          "url": "https://stream.sscloud7.com/live/suriyantv/index.m3u8",
-          "kind": "HLS",
-          "usable": false,
-          "reason": "REQUEST_ERROR:[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'stream.sscloud7.com'. (_ssl.c:1032)"
-        }
-      ]
-    },
-    {
-      "title": "Ultimate TV (1080p)",
-      "url": "https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u#source-index.m3u8-13",
-      "group": "Tamil Local TV",
-      "captured": 1,
-      "usable": 0,
-      "reason": "SEGMENT_ERROR:peer closed connection without sending complete message body (received 4046210 bytes, expected 4199168)",
-      "validations": [
-        {
-          "url": "https://stream.ottlive.co.in/utvtamil/index.m3u8",
-          "kind": "HLS",
-          "usable": false,
-          "reason": "SEGMENT_ERROR:peer closed connection without sending complete message body (received 4046210 bytes, expected 4199168)"
-        }
-      ]
     }
   ]
 }
