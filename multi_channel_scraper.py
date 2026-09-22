@@ -39,9 +39,14 @@ PAGE_GAP_SECONDS = 3
 # and validates them directly.
 EXTERNAL_M3U_SOURCES = [
     {
+        "url": "https://iptv-org.github.io/iptv/languages/tam.m3u",
+        "group": "Tamil TV",
+        "source": "iptv-org-tamil-language",
+    },
+    {
         "url": "https://iptv-org.github.io/iptv/subdivisions/in-tn.m3u",
         "group": "Tamil Local TV",
-        "source": "iptv-org",
+        "source": "iptv-org-tamil-nadu",
     },
 ]
 
@@ -155,7 +160,7 @@ def parse_m3u_entries(text: str, source: dict) -> list[dict]:
         if pending and line.startswith(("http://", "https://")):
             rows = {
                 "title": pending["title"],
-                "url": f"{source['url']}#source-{channel_slug(line)}-{len(entries)}",
+                "url": f"{source['url']}#source-{len(entries)}",
                 "logo": pending["logo"],
                 "group": source["group"],
                 "source_category": source["url"],
@@ -602,14 +607,18 @@ async def main() -> None:
                         continue
                     rows = parse_m3u_entries(response.text, source)
                     added = 0
+                    existing_stream_urls = {
+                        item.get("direct_candidates", [{}])[0].get("url", "")
+                        for item in inventory.values()
+                        if item.get("direct_candidates")
+                    }
                     for row in rows:
-                        key = row["title"].strip().lower() + "|" + row["direct_candidates"][0]["url"]
-                        if not any(
-                            (x.get("title", "").strip().lower() + "|" + x.get("direct_candidates", [{}])[0].get("url", "")) == key
-                            for x in inventory.values()
-                        ):
-                            inventory[row["url"]] = row
-                            added += 1
+                        stream_url = row["direct_candidates"][0]["url"]
+                        if stream_url in existing_stream_urls:
+                            continue
+                        inventory[row["url"]] = row
+                        existing_stream_urls.add(stream_url)
+                        added += 1
                     external_sources.append({
                         "source": source["source"],
                         "url": source["url"],
