@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-09-27T20:46:56.996953Z",
+  "generated_at": "2026-09-28T04:04:30.655280Z",
   "source": "https://bhoomtv.org",
   "access_layer": "https://bhoom-tamil-api.testtamil.workers.dev",
   "categories": [
@@ -13,17 +13,2742 @@
     }
   ],
   "stats": {
-    "inventory_channels": 0,
-    "scanned_channels": 0,
+    "inventory_channels": 303,
+    "scanned_channels": 303,
     "captured_stream_candidates": 0,
     "usable_streams": 0,
     "channels_with_usable_streams": 0,
     "m3u_entries_written": 0,
-    "failed_channels": 0
+    "failed_channels": 303
   },
-  "blocked_categories": {
-    "Tamil TV": "CLOUDFLARE_CHALLENGE",
-    "Tamil Local TV": "CLOUDFLARE_CHALLENGE"
-  },
-  "failures": []
+  "blocked_categories": {},
+  "failures": [
+    {
+      "title": "Dhool Tv",
+      "url": "https://bhoomtv.org/live/dhool-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Tbc Tv",
+      "url": "https://bhoomtv.org/live/tbc-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Superfine Films Tamil",
+      "url": "https://bhoomtv.org/live/superfine-films-tamil/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Retro Music",
+      "url": "https://bhoomtv.org/live/retro-music/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Thalaivar Hits",
+      "url": "https://bhoomtv.org/live/thalaivar-hits/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Astro Vaanavil",
+      "url": "https://bhoomtv.org/live/astro-vaanavil/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Nh Tamil Gold",
+      "url": "https://bhoomtv.org/live/nh-tamil-gold/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Kollywood Plus",
+      "url": "https://bhoomtv.org/live/kollywood-plus/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Kollywood Tv",
+      "url": "https://bhoomtv.org/live/kollywood-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Thalaa Tv",
+      "url": "https://bhoomtv.org/live/thalaa-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Jaya Tv Hd",
+      "url": "https://bhoomtv.org/live/jaya-tv-hd/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Jaya Movie",
+      "url": "https://bhoomtv.org/live/jaya-movie/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Jaya Max",
+      "url": "https://bhoomtv.org/live/jaya-max/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Isai Aruvi",
+      "url": "https://bhoomtv.org/live/isai-aruvi/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Murasu",
+      "url": "https://bhoomtv.org/live/murasu/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Kalaignar Tv",
+      "url": "https://bhoomtv.org/live/kalaignar-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Chithiram Tv",
+      "url": "https://bhoomtv.org/live/chithiram-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sirippoli Tv",
+      "url": "https://bhoomtv.org/live/sirippoli-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Vendhar Tv",
+      "url": "https://bhoomtv.org/live/vendhar-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Athavan Tv Hd",
+      "url": "https://bhoomtv.org/live/athavan-tv-hd/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Idhayam Kids",
+      "url": "https://bhoomtv.org/live/idhayam-kids/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Idhayam Tv",
+      "url": "https://bhoomtv.org/live/idhayam-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Tamil Thirai",
+      "url": "https://bhoomtv.org/live/tamil-thirai/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Polimer Tv",
+      "url": "https://bhoomtv.org/live/polimer-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Puthuyugam Tv",
+      "url": "https://bhoomtv.org/live/puthuyugam-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Raj Tv",
+      "url": "https://bhoomtv.org/live/raj-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Raj Digital Plus",
+      "url": "https://bhoomtv.org/live/raj-digital-plus/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Raj Musix",
+      "url": "https://bhoomtv.org/live/raj-musix/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Kc Music",
+      "url": "https://bhoomtv.org/live/kc-music/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Prime Music Hd",
+      "url": "https://bhoomtv.org/live/prime-music-hd/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Acp Isai Oli",
+      "url": "https://bhoomtv.org/live/acp-isai-oli/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Blue Moon Tv",
+      "url": "https://bhoomtv.org/live/blue-moon-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Animal Planet Hd",
+      "url": "https://bhoomtv.org/live/animal-planet-hd/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sri Sankara Tamil",
+      "url": "https://bhoomtv.org/live/sri-sankara-tamil/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Discovery Tamil 2",
+      "url": "https://bhoomtv.org/live/discovery-tamil-2/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Wow Kidz Tamil",
+      "url": "https://bhoomtv.org/live/wow-kidz-tamil/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Aps Gold Tv",
+      "url": "https://bhoomtv.org/live/aps-gold-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Aps Tv",
+      "url": "https://bhoomtv.org/live/aps-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Analai Express Tv",
+      "url": "https://bhoomtv.org/live/analai-express-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Analai Express Cinema",
+      "url": "https://bhoomtv.org/live/analai-express-cinema/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Tnse Tamil",
+      "url": "https://bhoomtv.org/live/tnse-tamil/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Tamil Ratna",
+      "url": "https://bhoomtv.org/live/tamil-ratna/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Pcn Channel Hd",
+      "url": "https://bhoomtv.org/live/pcn-channel-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sooriyan Tv Cinema",
+      "url": "https://bhoomtv.org/live/sooriyan-tv-cinema/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Brio Tv",
+      "url": "https://bhoomtv.org/live/brio-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Tet Hd",
+      "url": "https://bhoomtv.org/live/tet-hd/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "7S Music",
+      "url": "https://bhoomtv.org/live/7s-music/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sairam Tv",
+      "url": "https://bhoomtv.org/live/sairam-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Om Tv",
+      "url": "https://bhoomtv.org/live/om-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "History Tv18 Hd Tamil",
+      "url": "https://bhoomtv.org/live/history-tv18-hd-tamil/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Cartoon Network Tamil",
+      "url": "https://bhoomtv.org/live/cartoon-network-tamil/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Discovery Kids Tamil",
+      "url": "https://bhoomtv.org/live/discovery-kids-tamil/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sai Tv Tamil",
+      "url": "https://bhoomtv.org/live/sai-tv-tamil/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sana Tv Hd",
+      "url": "https://bhoomtv.org/live/sana-tv-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sana Plus Hd",
+      "url": "https://bhoomtv.org/live/sana-plus-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Roja Tv",
+      "url": "https://bhoomtv.org/live/roja-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Roja Movies",
+      "url": "https://bhoomtv.org/live/roja-movies/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Thaai Tv",
+      "url": "https://bhoomtv.org/live/thaai-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Btv Hd",
+      "url": "https://bhoomtv.org/live/btv-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Subin Tv",
+      "url": "https://bhoomtv.org/live/subin-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Ntc Tv Hd",
+      "url": "https://bhoomtv.org/live/ntc-tv-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Utv Hd",
+      "url": "https://bhoomtv.org/live/utv-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Surya Tamil",
+      "url": "https://bhoomtv.org/live/surya-tamil/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Acp Tv Madurai",
+      "url": "https://bhoomtv.org/live/acp-tv-madurai/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Acp Tv Classic Madurai",
+      "url": "https://bhoomtv.org/live/acp-tv-classic-madurai/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Discovery Tamil",
+      "url": "https://bhoomtv.org/live/discovery-tamil/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Pogo Tamil",
+      "url": "https://bhoomtv.org/live/pogo-tamil/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Aaryaa Tv",
+      "url": "https://bhoomtv.org/live/aaryaa-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Rock Tv",
+      "url": "https://bhoomtv.org/live/rock-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Thanthi One",
+      "url": "https://bhoomtv.org/live/thanthi-one/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Thamilaaram Tv",
+      "url": "https://bhoomtv.org/live/thamilaaram-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Malar Tv",
+      "url": "https://bhoomtv.org/live/malar-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Mediacorp Entertainment Tamil",
+      "url": "https://bhoomtv.org/live/mediacorp-entertainment-tamil/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Aastha Tamil",
+      "url": "https://bhoomtv.org/live/aastha-tamil/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Tamilan Tv",
+      "url": "https://bhoomtv.org/live/tamilan-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Mk Tunes",
+      "url": "https://bhoomtv.org/live/mk-tunes/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Mk Six",
+      "url": "https://bhoomtv.org/live/mk-six/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Vasantham Tv Sgp",
+      "url": "https://bhoomtv.org/live/vasantham-tv-sgp/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Tvi Hd",
+      "url": "https://bhoomtv.org/live/tvi-hd/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Dd Podhigai",
+      "url": "https://bhoomtv.org/live/dd-podhigai/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Ibc Tamil",
+      "url": "https://bhoomtv.org/live/ibc-tamil/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Makkal Tv",
+      "url": "https://bhoomtv.org/live/makkal-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Vasanth Tv",
+      "url": "https://bhoomtv.org/live/vasanth-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Dheeran Tv",
+      "url": "https://bhoomtv.org/live/dheeran-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Colors Tamil Hd",
+      "url": "https://bhoomtv.org/live/colors-tamil-hd/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Ibc Bakthi",
+      "url": "https://bhoomtv.org/live/ibc-bakthi/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Mk Tv",
+      "url": "https://bhoomtv.org/live/mk-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Tunes 6",
+      "url": "https://bhoomtv.org/live/tunes-6/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Imayam",
+      "url": "https://bhoomtv.org/live/imayam/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Peppers Tv",
+      "url": "https://bhoomtv.org/live/peppers-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Moon Tv",
+      "url": "https://bhoomtv.org/live/moon-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Madhimugam Tv",
+      "url": "https://bhoomtv.org/live/madhimugam-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Salvation Tv",
+      "url": "https://bhoomtv.org/live/salvation-tv/",
+      "group": "Tamil TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sky Media Tenkasi",
+      "url": "https://bhoomtv.org/live/sky-media-tenkasi/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Avs Tv",
+      "url": "https://bhoomtv.org/live/avs-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Mei Alai Tv",
+      "url": "https://bhoomtv.org/live/mei-alai-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Adhir Alai Tv",
+      "url": "https://bhoomtv.org/live/adhir-alai-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Alpha Tv",
+      "url": "https://bhoomtv.org/live/alpha-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Gopuram Tv",
+      "url": "https://bhoomtv.org/live/gopuram-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Aalayam Tv",
+      "url": "https://bhoomtv.org/live/aalayam-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Silver Sat Media",
+      "url": "https://bhoomtv.org/live/silver-sat-media/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Vaagai Tv",
+      "url": "https://bhoomtv.org/live/vaagai-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Km Television",
+      "url": "https://bhoomtv.org/live/km-television/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sss Hd",
+      "url": "https://bhoomtv.org/live/sss-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Vinayaga Tv",
+      "url": "https://bhoomtv.org/live/vinayaga-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Devi Tv",
+      "url": "https://bhoomtv.org/live/devi-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Khila Tv",
+      "url": "https://bhoomtv.org/live/khila-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Agasham Tv",
+      "url": "https://bhoomtv.org/live/agasham-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Right Tv",
+      "url": "https://bhoomtv.org/live/right-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Agam Tv",
+      "url": "https://bhoomtv.org/live/agam-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Pj Tv",
+      "url": "https://bhoomtv.org/live/pj-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Yugam Tv",
+      "url": "https://bhoomtv.org/live/yugam-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Isai Saral",
+      "url": "https://bhoomtv.org/live/isai-saral/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Abnaz Tv",
+      "url": "https://bhoomtv.org/live/abnaz-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "S Max Tamil",
+      "url": "https://bhoomtv.org/live/s-max-tamil/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Vaanam Tv Hd",
+      "url": "https://bhoomtv.org/live/vaanam-tv-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Snr Tv Hd",
+      "url": "https://bhoomtv.org/live/snr-tv-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Ruby Digital Tv",
+      "url": "https://bhoomtv.org/live/ruby-digital-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sgb Tv",
+      "url": "https://bhoomtv.org/live/sgb-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Agaram Tv",
+      "url": "https://bhoomtv.org/live/agaram-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Pugal Tv",
+      "url": "https://bhoomtv.org/live/pugal-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sr Musix Hd",
+      "url": "https://bhoomtv.org/live/sr-musix-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Diamond Music",
+      "url": "https://bhoomtv.org/live/diamond-music/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Diamond Talkies Hd",
+      "url": "https://bhoomtv.org/live/diamond-talkies-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Diamond Tv",
+      "url": "https://bhoomtv.org/live/diamond-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sri Vinayaga Movies",
+      "url": "https://bhoomtv.org/live/sri-vinayaga-movies/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sri Vinayaga Hollywood",
+      "url": "https://bhoomtv.org/live/sri-vinayaga-hollywood/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sri Vinayaga Tv",
+      "url": "https://bhoomtv.org/live/sri-vinayaga-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Euro Tamil",
+      "url": "https://bhoomtv.org/live/euro-tamil/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Madurai Arasi Tv",
+      "url": "https://bhoomtv.org/live/madurai-arasi-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Eye Tamil",
+      "url": "https://bhoomtv.org/live/eye-tamil/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Eye Tamil Comedy",
+      "url": "https://bhoomtv.org/live/eye-tamil-comedy/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Eye Tamil Music",
+      "url": "https://bhoomtv.org/live/eye-tamil-music/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Bigil Tv",
+      "url": "https://bhoomtv.org/live/bigil-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Vetri Tv",
+      "url": "https://bhoomtv.org/live/vetri-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Prince Tv",
+      "url": "https://bhoomtv.org/live/prince-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Vel Tv",
+      "url": "https://bhoomtv.org/live/vel-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sri Tv",
+      "url": "https://bhoomtv.org/live/sri-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Kings Tv",
+      "url": "https://bhoomtv.org/live/kings-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Lime Tv Tenkasi",
+      "url": "https://bhoomtv.org/live/lime-tv-tenkasi/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Chola Tv",
+      "url": "https://bhoomtv.org/live/chola-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Siddhar Isai",
+      "url": "https://bhoomtv.org/live/siddhar-isai/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "S Media Puducherry",
+      "url": "https://bhoomtv.org/live/s-media-puducherry/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "A1 Media News",
+      "url": "https://bhoomtv.org/live/a1-media-news/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Mdn Tv",
+      "url": "https://bhoomtv.org/live/mdn-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Maa Tv Tirunelveli",
+      "url": "https://bhoomtv.org/live/maa-tv-tirunelveli/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Santhiya Tv Kumbakonam",
+      "url": "https://bhoomtv.org/live/santhiya-tv-kumbakonam/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sarvik Tv",
+      "url": "https://bhoomtv.org/live/sarvik-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Aaron Tv",
+      "url": "https://bhoomtv.org/live/aaron-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Shalwin Tv Hd",
+      "url": "https://bhoomtv.org/live/shalwin-tv-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Thendral Tv Madurai",
+      "url": "https://bhoomtv.org/live/thendral-tv-madurai/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Jayam Tv Sivakasi",
+      "url": "https://bhoomtv.org/live/jayam-tv-sivakasi/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Anu Tv",
+      "url": "https://bhoomtv.org/live/anu-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Shakthi Channel",
+      "url": "https://bhoomtv.org/live/shakthi-channel/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Dharani Tv",
+      "url": "https://bhoomtv.org/live/dharani-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Adhiyaman Tv",
+      "url": "https://bhoomtv.org/live/adhiyaman-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Mm Tv Valliyur",
+      "url": "https://bhoomtv.org/live/mm-tv-valliyur/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Jayam Tv Trichy",
+      "url": "https://bhoomtv.org/live/jayam-tv-trichy/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Jos Tv Tirunelveli",
+      "url": "https://bhoomtv.org/live/jos-tv-tirunelveli/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Naga Tv",
+      "url": "https://bhoomtv.org/live/naga-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "V Tamil",
+      "url": "https://bhoomtv.org/live/v-tamil/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Mtv Chennai",
+      "url": "https://bhoomtv.org/live/mtv-chennai/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Arighni Tv",
+      "url": "https://bhoomtv.org/live/arighni-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Aadhavan Tamil Tv",
+      "url": "https://bhoomtv.org/live/aadhavan-tamil-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Kanna Tv",
+      "url": "https://bhoomtv.org/live/kanna-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Phoenix Tv",
+      "url": "https://bhoomtv.org/live/phoenix-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Rk Tv",
+      "url": "https://bhoomtv.org/live/rk-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Lion Tv",
+      "url": "https://bhoomtv.org/live/lion-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Aadhavan Colours",
+      "url": "https://bhoomtv.org/live/aadhavan-colours/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sri Sai Tv",
+      "url": "https://bhoomtv.org/live/sri-sai-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Subash Tv Tenkasi",
+      "url": "https://bhoomtv.org/live/subash-tv-tenkasi/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Mangalam Tv",
+      "url": "https://bhoomtv.org/live/mangalam-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Star Media",
+      "url": "https://bhoomtv.org/live/star-media/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "G Max Tv",
+      "url": "https://bhoomtv.org/live/g-max-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Roja Tv Coimbatore",
+      "url": "https://bhoomtv.org/live/roja-tv-coimbatore/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Atn Tv",
+      "url": "https://bhoomtv.org/live/atn-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Siddhar Tv",
+      "url": "https://bhoomtv.org/live/siddhar-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Mathan Tv",
+      "url": "https://bhoomtv.org/live/mathan-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Ruhasha Tv",
+      "url": "https://bhoomtv.org/live/ruhasha-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Ms Mathan Tv",
+      "url": "https://bhoomtv.org/live/ms-mathan-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "A1 Tv Ariyalur",
+      "url": "https://bhoomtv.org/live/a1-tv-ariyalur/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Raja Tv Valliyur",
+      "url": "https://bhoomtv.org/live/raja-tv-valliyur/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Smart Sri Tv",
+      "url": "https://bhoomtv.org/live/smart-sri-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Bhagyam Tv",
+      "url": "https://bhoomtv.org/live/bhagyam-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Km Music",
+      "url": "https://bhoomtv.org/live/km-music/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Annai Tv Thoothukudi",
+      "url": "https://bhoomtv.org/live/annai-tv-thoothukudi/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Ntv Nellai",
+      "url": "https://bhoomtv.org/live/ntv-nellai/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Vidiyal Tv",
+      "url": "https://bhoomtv.org/live/vidiyal-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Vds Tv",
+      "url": "https://bhoomtv.org/live/vds-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Durai Melodies",
+      "url": "https://bhoomtv.org/live/durai-melodies/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Selva Tamil Tv",
+      "url": "https://bhoomtv.org/live/selva-tamil-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Pasamalar Tv",
+      "url": "https://bhoomtv.org/live/pasamalar-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "V Tamil Hd",
+      "url": "https://bhoomtv.org/live/v-tamil-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Appu Tv",
+      "url": "https://bhoomtv.org/live/appu-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Aarthi Tv",
+      "url": "https://bhoomtv.org/live/aarthi-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Tamil View Tv",
+      "url": "https://bhoomtv.org/live/tamil-view-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Aathi Tv",
+      "url": "https://bhoomtv.org/live/aathi-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Punnagai Desam Tv",
+      "url": "https://bhoomtv.org/live/punnagai-desam-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Thendral Tv Alangulam",
+      "url": "https://bhoomtv.org/live/thendral-tv-alangulam/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Penguin Tv",
+      "url": "https://bhoomtv.org/live/penguin-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Amma Tv",
+      "url": "https://bhoomtv.org/live/amma-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "7Star Television",
+      "url": "https://bhoomtv.org/live/7star-television/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Annai Tv",
+      "url": "https://bhoomtv.org/live/annai-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Annai Tamil",
+      "url": "https://bhoomtv.org/live/annai-tamil/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Citi Channel 2",
+      "url": "https://bhoomtv.org/live/citi-channel-2/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Raagam Tv",
+      "url": "https://bhoomtv.org/live/raagam-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Fort Channels",
+      "url": "https://bhoomtv.org/live/fort-channels/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Me 24 Tamil",
+      "url": "https://bhoomtv.org/live/me-24-tamil/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Atn Media",
+      "url": "https://bhoomtv.org/live/atn-media/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Ragam Tv",
+      "url": "https://bhoomtv.org/live/ragam-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Shalini Tv",
+      "url": "https://bhoomtv.org/live/shalini-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "King Tv",
+      "url": "https://bhoomtv.org/live/king-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Hitech Tv",
+      "url": "https://bhoomtv.org/live/hitech-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Vajra Tv",
+      "url": "https://bhoomtv.org/live/vajra-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Vajram Tv",
+      "url": "https://bhoomtv.org/live/vajram-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Oscar Tv",
+      "url": "https://bhoomtv.org/live/oscar-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Amman Tv",
+      "url": "https://bhoomtv.org/live/amman-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Anandam Utv",
+      "url": "https://bhoomtv.org/live/anandam-utv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Anandam Tv Madurai",
+      "url": "https://bhoomtv.org/live/anandam-tv-madurai/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Anandam Abi Tv",
+      "url": "https://bhoomtv.org/live/anandam-abi-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Garudan Tv",
+      "url": "https://bhoomtv.org/live/garudan-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Vtv Entertainment",
+      "url": "https://bhoomtv.org/live/vtv-entertainment/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Jayam Tv Karur",
+      "url": "https://bhoomtv.org/live/jayam-tv-karur/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Suriyan Tv 2",
+      "url": "https://bhoomtv.org/live/suriyan-tv-2/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Amma Vision",
+      "url": "https://bhoomtv.org/live/amma-vision/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Thirai Isai",
+      "url": "https://bhoomtv.org/live/thirai-isai/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Thirai Tv",
+      "url": "https://bhoomtv.org/live/thirai-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Global Tv",
+      "url": "https://bhoomtv.org/live/global-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Gcv",
+      "url": "https://bhoomtv.org/live/gcv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Jc Tv",
+      "url": "https://bhoomtv.org/live/jc-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Kumari Kathir",
+      "url": "https://bhoomtv.org/live/kumari-kathir/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Matha Tv",
+      "url": "https://bhoomtv.org/live/matha-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Bright Simrose Tv",
+      "url": "https://bhoomtv.org/live/bright-simrose-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sj Surya Tv",
+      "url": "https://bhoomtv.org/live/sj-surya-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Maniway Tv",
+      "url": "https://bhoomtv.org/live/maniway-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Enthiran Tv",
+      "url": "https://bhoomtv.org/live/enthiran-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Stn Tv",
+      "url": "https://bhoomtv.org/live/stn-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Mcn Hd",
+      "url": "https://bhoomtv.org/live/mcn-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Jayam Tv Namakkal",
+      "url": "https://bhoomtv.org/live/jayam-tv-namakkal/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Jrp Tv Hd",
+      "url": "https://bhoomtv.org/live/jrp-tv-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Malar Tv Tamil",
+      "url": "https://bhoomtv.org/live/malar-tv-tamil/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Ss Tv Tamil",
+      "url": "https://bhoomtv.org/live/ss-tv-tamil/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Emperor Tv",
+      "url": "https://bhoomtv.org/live/emperor-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Irattaipaathai Tv",
+      "url": "https://bhoomtv.org/live/irattaipaathai-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Ctn",
+      "url": "https://bhoomtv.org/live/ctn/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Tharun Movies Hd",
+      "url": "https://bhoomtv.org/live/tharun-movies-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Mn Tv",
+      "url": "https://bhoomtv.org/live/mn-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Mn Music",
+      "url": "https://bhoomtv.org/live/mn-music/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Gem Tv",
+      "url": "https://bhoomtv.org/live/gem-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Tamil Oli Tv",
+      "url": "https://bhoomtv.org/live/tamil-oli-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Kc Tv Coimbatore",
+      "url": "https://bhoomtv.org/live/kc-tv-coimbatore/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Jith Tv",
+      "url": "https://bhoomtv.org/live/jith-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Jcv Musix",
+      "url": "https://bhoomtv.org/live/jcv-musix/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Raga Tv",
+      "url": "https://bhoomtv.org/live/raga-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Oli Tv Hd",
+      "url": "https://bhoomtv.org/live/oli-tv-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Kumari Tv",
+      "url": "https://bhoomtv.org/live/kumari-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Prime Tv",
+      "url": "https://bhoomtv.org/live/prime-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Dark Tv",
+      "url": "https://bhoomtv.org/live/dark-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Succes Tv Tamil",
+      "url": "https://bhoomtv.org/live/succes-tv-tamil/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Manasu Tv",
+      "url": "https://bhoomtv.org/live/manasu-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sakthi Tv Hd",
+      "url": "https://bhoomtv.org/live/sakthi-tv-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Moon Tv Hd",
+      "url": "https://bhoomtv.org/live/moon-tv-hd/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Asoka Tv",
+      "url": "https://bhoomtv.org/live/asoka-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Ntn Tv",
+      "url": "https://bhoomtv.org/live/ntn-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Pr Tv",
+      "url": "https://bhoomtv.org/live/pr-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Thalapathy Tv",
+      "url": "https://bhoomtv.org/live/thalapathy-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Riya Tv",
+      "url": "https://bhoomtv.org/live/riya-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Dark Television",
+      "url": "https://bhoomtv.org/live/dark-television/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Harin Tv",
+      "url": "https://bhoomtv.org/live/harin-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Time Tv",
+      "url": "https://bhoomtv.org/live/time-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Imai Tv",
+      "url": "https://bhoomtv.org/live/imai-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sooriyan Tv",
+      "url": "https://bhoomtv.org/live/sooriyan-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Nila Tv",
+      "url": "https://bhoomtv.org/live/nila-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "We Baduga Tv",
+      "url": "https://bhoomtv.org/live/we-baduga-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sky Plus Tv",
+      "url": "https://bhoomtv.org/live/sky-plus-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sailam Tv",
+      "url": "https://bhoomtv.org/live/sailam-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Devathai Tv",
+      "url": "https://bhoomtv.org/live/devathai-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sasi Tv",
+      "url": "https://bhoomtv.org/live/sasi-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Jose Tv",
+      "url": "https://bhoomtv.org/live/jose-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Top Tv",
+      "url": "https://bhoomtv.org/live/top-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Darshan Tv",
+      "url": "https://bhoomtv.org/live/darshan-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sha Tv",
+      "url": "https://bhoomtv.org/live/sha-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Mullai Tv",
+      "url": "https://bhoomtv.org/live/mullai-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sachin Tv",
+      "url": "https://bhoomtv.org/live/sachin-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Sachin Tv Music",
+      "url": "https://bhoomtv.org/live/sachin-tv-music/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Vaanavil Tv",
+      "url": "https://bhoomtv.org/live/vaanavil-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Eet Tv",
+      "url": "https://bhoomtv.org/live/eet-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Aadvik Tv",
+      "url": "https://bhoomtv.org/live/aadvik-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Aadhavan Tv",
+      "url": "https://bhoomtv.org/live/aadhavan-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Shalini Tv 2",
+      "url": "https://bhoomtv.org/live/shalini-tv-2/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Jcv",
+      "url": "https://bhoomtv.org/live/jcv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Velicham Tv",
+      "url": "https://bhoomtv.org/live/velicham-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Hai Tv",
+      "url": "https://bhoomtv.org/live/hai-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Spice Tv",
+      "url": "https://bhoomtv.org/live/spice-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Urchagam Tv",
+      "url": "https://bhoomtv.org/live/urchagam-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Eagle Tv",
+      "url": "https://bhoomtv.org/live/eagle-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Mathi Tv",
+      "url": "https://bhoomtv.org/live/mathi-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Ashoka Tv",
+      "url": "https://bhoomtv.org/live/ashoka-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Apple Tv Marthandam",
+      "url": "https://bhoomtv.org/live/apple-tv-marthandam/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Rj Tamil Tv",
+      "url": "https://bhoomtv.org/live/rj-tamil-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Akilam Tv",
+      "url": "https://bhoomtv.org/live/akilam-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "Veerali Tv",
+      "url": "https://bhoomtv.org/live/veerali-tv/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    },
+    {
+      "title": "7 Green 4K",
+      "url": "https://bhoomtv.org/live/7-green-4k/",
+      "group": "Tamil Local TV",
+      "captured": 0,
+      "usable": 0,
+      "reason": "CLOUDFLARE_OR_ACCESS_BLOCK",
+      "validations": []
+    }
+  ]
 }
