@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-10-13T00:06:00.512406Z",
+  "generated_at": "2026-10-13T13:25:21.101719Z",
   "source": "https://bhoomtv.org",
   "access_layer": "https://bhoom-tamil-api.testtamil.workers.dev",
   "categories": [
@@ -21,9 +21,6 @@
     "m3u_entries_written": 0,
     "failed_channels": 0
   },
-  "blocked_categories": {
-    "Tamil TV": "CLOUDFLARE_CHALLENGE",
-    "Tamil Local TV": "CLOUDFLARE_CHALLENGE"
-  },
+  "blocked_categories": {},
   "failures": []
 }
